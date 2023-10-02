@@ -1,0 +1,50 @@
+:host {
+  --content-padding: 10px;
+}
+header {
+  height: var(--header-height);
+  padding: 20px 20px 20px 50px;
+ 
+  position: sticky;
+  top:0;
+  background-color: #222831;
+  
+  z-index: 2;
+  display: grid;
+}
+header >a{
+  grid-row: 1;
+  grid-column: 1;
+  height:inherit;
+}
+header > button{
+  grid-row: 1;
+  grid-column: 10;
+}
+button{
+  /* vertical-align: top; */
+  margin: auto;
+
+}
+
+.content{
+  height:100%;
+  width: 100%;
+  background-color: #dddddd;
+}
+
+.content .product-details-action{  
+  position: absolute;
+  bottom:0;
+}
+
+.brand-logo{
+  padding-left: 20px;
+  height:inherit;
+
+}
+
+.block{
+  grid-row: 1;
+  grid-column: 2/span 8;
+}
